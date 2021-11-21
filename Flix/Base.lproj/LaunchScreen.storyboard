@@ -16,13 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-4c-Zqa">
-                                <rect key="frame" x="138" y="305" width="138" height="139"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-4c-Zqa">
+                                <rect key="frame" x="100" y="308" width="214" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PFa-4c-Zqa" secondAttribute="height" multiplier="138:139" id="V9w-TP-Ne9"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PFa-4c-Zqa" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="100" id="7xZ-iO-Jcr"/>
+                            <constraint firstItem="PFa-4c-Zqa" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9gO-2w-obX"/>
+                            <constraint firstAttribute="trailing" secondItem="PFa-4c-Zqa" secondAttribute="trailing" constant="100" id="Q0C-ww-wBz"/>
+                            <constraint firstItem="PFa-4c-Zqa" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-32" id="giS-1c-UE3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
