@@ -21,7 +21,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### App Walkthrough GIF
 
-![](https://i.imgur.com/v2EMHZU.gif)
+![](https://i.imgur.com/0Q1QY1J.gif)
 
 ### Notes
 - The Walkthrough GIF is still not showing, although it works perfectly in HackMD.
