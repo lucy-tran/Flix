@@ -22,6 +22,9 @@ class MovieDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let width = view.frame.size.width
+        backdropView.frame = CGRect(x: 0, y: 0, width: width, height: width / 3 * 2)
                 
         titleLabel.text = movie["title"] as? String
         synopsisLabel.text = movie["overview"] as? String
@@ -39,9 +42,9 @@ class MovieDetailsViewController: UIViewController {
         
     }
     
-
-    
-
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let trailerViewController = segue.destination as! MovieTrailerController
+        trailerViewController.movieId = movie["id"] as! Int
+    }
 
 }
